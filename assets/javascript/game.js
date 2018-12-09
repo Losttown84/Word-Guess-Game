@@ -11,5 +11,28 @@ var yourLettersText = document.getElementById("yourletters-text")
 
 document.onkeyup = function(event){
 
+    var userGuess = event.key;
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+
+
+    if (options.indexOf(userGuess) > -1){
+        if (userGuess === computerGuess){
+            wins++;
+            guesses = 9;
+            guessChoices = [];
+        }
+    if (userGuess != computerGuess) {
+        guesses --;
+        guessChoices.push(userGuess);
+    }    
+    if (guesses === 0){
+        guesses = 9;
+        losses ++;
+        guessChoices = [];
+    }
+
+    }
+
+    var html =
 };
-)
