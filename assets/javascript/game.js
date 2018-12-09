@@ -4,10 +4,10 @@ var losses = 0;
 var guesses = 9;
 var guessChoices = [];
 
-var winsText = document.getElementById("wins-text");
-var lossesText = document.getElementById("losses-text");
-var guessesText = document.getElementById("guesses-text");
-var yourLettersText = document.getElementById("yourletters-text")
+//var winsText = document.getElementById("wins-text");
+//var lossesText = document.getElementById("losses-text");
+//var guessesText = document.getElementById("guesses-text");
+//var yourLettersText = document.getElementById("yourletters-text")
 
 document.onkeyup = function(event){
 
@@ -37,7 +37,7 @@ document.onkeyup = function(event){
     var html =
     "<h1> The Psychic Game </h1>" +
     "<p> Guess what letter I'm thinking of</p>" +
-    "<p>Wins: " + wins + "</p>" +
+    "<p> Wins: " + wins + "</p>" +
     "<p> Losses:" + losses + "</p>" +
     "<p> Guess Left:" + guesses + "</p>" +
     "<p> Your Guesses:" + guessChoices.join(",") + "</p>";
