@@ -35,4 +35,12 @@ document.onkeyup = function(event){
     }
 
     var html =
+    "<h1> The Psychic Game </h1>" +
+    "<p> Guess what letter I'm thinking of</p>" +
+    "<p>Wins: " + wins + "</p>" +
+    "<p> Losses:" + losses + "</p>" +
+    "<p> Guess Left:" + guesses + "</p>" +
+    "<p> Your Guesses:" + guessChoices.join(",") + "</p>";
+
+    document.querySelector("wins-text", "losses-text", "guesses-text", "yourletters-text" ).innerHTML = html;
 };
