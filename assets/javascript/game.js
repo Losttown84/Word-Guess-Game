@@ -5,10 +5,10 @@ var guesses = 9;
 var guessChoices = [];
 
 //placeholder for wins, losses, guess and letter guesses
-"<p> Wins: " + wins + "</p>" +
-"<p> Losses:" + losses + "</p>" +
-"<p> Guess Left:" + guesses + "</p>" +
-"<p> Your Guesses:" + guessChoices.join(",") + "</p>";
+// "<p> Wins: " + wins + "</p>" +
+// "<p> Losses: " + losses + "</p>" +
+// "<p> Guess Left: " + guesses + "</p>" +
+// "<p> Your Guesses: " + guessChoices.join(",") + "</p>";
 
 //on keyup is when the letter the user has chosen will show up under guess Choices
 document.onkeyup = function(event){
@@ -26,14 +26,14 @@ document.onkeyup = function(event){
             guessChoices = [];
         }
     //duplicate letters will not affect guesses left    
-        //else{
-          //  if (guessChoices.includes(userGuess){
-           // })
-            //else {
-              //  userGuess--;
-                //guessChoices.push(userGuess);
-            //}
-        //}
+        // else{
+        //    if (guessChoices.includes(userGuess){
+        //    })
+        //     else {
+        //        userGuess--;
+        //         guessChoices.push(userGuess);
+        //     }
+        // }
     //if user guess does not equal computer guess, guess left goes down by 1    
     if (userGuess != computerGuess) {
         guesses --;
@@ -50,9 +50,9 @@ document.onkeyup = function(event){
 //variable that will change as the logic 
     var html =
     "<p> Wins: " + wins + "</p>" +
-    "<p> Losses:" + losses + "</p>" +
-    "<p> Guess Left:" + guesses + "</p>" +
-    "<p> Your Guesses:" + guessChoices.join(",") + "</p>";
+    "<p> Losses: " + losses + "</p>" +
+    "<p> Guess Left: " + guesses + "</p>" +
+    "<p> Your Guesses: " + guessChoices.join(",") + "</p>";
 
     //document.querySelector("wins-text", "losses-text", "guesses-text", "yourletters-text" ).innerHTML = html
     document.querySelector("#wins-text", "#losses-text", "#guesses-text", "#yourletters-text").innerHTML = html;
