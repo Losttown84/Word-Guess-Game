@@ -4,6 +4,11 @@ var losses = 0;
 var guesses = 9;
 var guessChoices = [];
 
+//placeholder for wins, losses, guess and letter guesses
+// "<p> Wins: " + wins + "</p>" +
+// "<p> Losses: " + losses + "</p>" +
+// "<p> Guess Left: " + guesses + "</p>" +
+// "<p> Your Guesses: " + guessChoices.join(",") + "</p>";
 
 //on keyup is when the letter the user has chosen will show up under guess Choices
 document.onkeyup = function(event){
@@ -20,7 +25,15 @@ document.onkeyup = function(event){
             guesses = 9;
             guessChoices = [];
         }
-
+    //duplicate letters will not affect guesses left    
+        // else{
+        //    if (guessChoices.includes(userGuess){
+        //    })
+        //     else {
+        //        userGuess--;
+        //         guessChoices.push(userGuess);
+        //     }
+        // }
     //if user guess does not equal computer guess, guess left goes down by 1    
     if (userGuess != computerGuess) {
         guesses --;
